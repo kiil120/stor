@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="دفيّ logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#24406B"/>
+      <stop offset="100%" stop-color="#E8758F"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <circle cx="64" cy="64" r="44" fill="rgba(255,255,255,0.12)"/>
+  <path d="M42 34h17c18 0 30 12 30 30s-12 30-30 30H42V34zm12 12v36h5c10 0 16-7 16-18s-6-18-16-18h-5z" fill="#fff"/>
+  <circle cx="72" cy="64" r="6" fill="#FCE6EB" opacity="0.9"/>
+</svg>
