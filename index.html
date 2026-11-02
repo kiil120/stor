@@ -65,9 +65,9 @@ header{background:#fff;position:sticky;top:0;z-index:20;display:flex;gap:10px;al
 .sz button{border:1.5px solid var(--ln);background:#fff;border-radius:10px;padding:6px 14px;font-size:14px}.sz .on{background:var(--p);color:#fff;border-color:var(--p)}
 .sz button[disabled]{text-decoration:line-through;color:#aab;background:var(--bg)}
 .sz small{display:block;font-size:11px;opacity:.75;line-height:1.2}.avail{font-size:13px;margin-top:10px;color:var(--ok)}.avail.lw{color:var(--a)}
-.bot{position:fixed;bottom:18px;right:16px;z-index:30;background:var(--a);color:#fff;width:56px;height:56px;border-radius:99px;display:grid;place-items:center;box-shadow:0 8px 22px rgba(232,117,143,.45)}
+.bot{position:fixed;bottom:18px;right:16px;z-index:30;background:var(--a);color:#fff;width:56px;height:56px;border-radius:99px;display:grid;place-items:center;box-shadow:0 8px 22px rgba(232,117,143,.4)}
 .bot .ic{width:26px;height:26px}
-.chat{position:fixed;bottom:84px;right:16px;width:min(350px,calc(100% - 32px));height:460px;background:#fff;border-radius:20px;z-index:42;display:none;flex-direction:column;box-shadow:0 14px 44px rgba(22,41,74,.3);overflow:hidden}
+.chat{position:fixed;bottom:84px;right:16px;width:min(350px,calc(100% - 32px));height:460px;background:#fff;border-radius:20px;z-index:42;display:none;flex-direction:column;box-shadow:0 14px 44px rgba(22,41,74,.18)}
 .chat.on{display:flex}.chat .hd{background:var(--p);color:#fff;padding:12px 14px;font-weight:600;display:flex;justify-content:space-between}
 #msgs{flex:1;overflow:auto;padding:10px;display:flex;flex-direction:column;gap:6px}
 .m{max-width:85%;padding:8px 12px;border-radius:14px;font-size:14px;white-space:pre-line}.m.b{background:var(--sf);align-self:flex-start}.m.u{background:var(--p);color:#fff;align-self:flex-end}
@@ -75,8 +75,8 @@ header{background:#fff;position:sticky;top:0;z-index:20;display:flex;gap:10px;al
 .chat form{display:flex;gap:6px;padding:8px;border-top:1px solid var(--ln)}.chat form input{margin:0}.chat form button{background:var(--p);color:#fff;border-radius:12px;padding:0 12px}
 .toast{position:fixed;bottom:96px;left:50%;transform:translateX(-50%);background:var(--p2);color:#fff;padding:10px 20px;border-radius:99px;z-index:60;display:none;font-size:14px}
 footer{text-align:center;color:var(--m);padding:28px 14px;font-size:13px}footer a{color:var(--p)}
-.tl{display:flex;margin:12px 0 6px}.tl div{flex:1;text-align:center;position:relative}.tl i{display:block;width:14px;height:14px;border-radius:99px;background:var(--ln);margin:0 auto 4px;position:relative;z-index:1}.tl small{color:var(--m);font-size:11px}.tl div:not(:first-child)::before{content:"";position:absolute;top:6px;left:50%;width:100%;height:2px;background:var(--ln)}.tl .on i,.tl .on:not(:first-child)::before{background:var(--ok)}.tl .on small{color:var(--t);font-weight:600}
-@media(max-width:700px){.hero{grid-template-columns:1fr}.hero img{order:-1;min-height:180px;max-height:240px}.mod.pm>div{grid-template-columns:1fr}.sr{display:none}header{justify-content:space-between}}
+.tl{display:flex;margin:12px 0 6px}.tl div{flex:1;text-align:center;position:relative}.tl i{display:block;width:14px;height:14px;border-radius:99px;background:var(--ln);margin:0 auto 4px;position:relative}.tl .on i{background:var(--a)}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.hero img{order:-1;min-height:180px;max-height:240px}.mod.pm>div{grid-template-columns:1fr}.sr{display:none}header{justify-content:space-between}} 
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -86,17 +86,17 @@ footer{text-align:center;color:var(--m);padding:28px 14px;font-size:13px}footer 
 <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
 <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
 <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
-<symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 15.78 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
 <symbol id="i-cash" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
-<symbol id="i-swap" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
-<symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+<symbol id="i-swap" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="M12 7v5l3 2"/></symbol>
 <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
 <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
 <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
 <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
 <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
-<symbol id="i-paw" viewBox="0 0 24 24"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><circle cx="8" cy="4" r="0"/><path d="M12 11c-3 0-6 3-6 6 0 2 1.5 3 3 3 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.5 0 3-1 3-3 0-3-3-6-6-6Z"/></symbol>
+<symbol id="i-paw" viewBox="0 0 24 24"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><path d="M12 11c-3 0-6 3-6 6 0 2 1.5 3 3 3s3-1 3-3v-3"/><path d="M12 11c3 0 6 3 6 6 0 2-1.5 3-3 3s-3-1-3-3v-3"/></symbol>
 </defs></svg>
 
 <div class="bar0"><b>خصم 10%</b> على أول طلب عند إنشاء حساب · ينتهي العرض خلال <b id="cd"></b></div>
@@ -109,8 +109,8 @@ footer{text-align:center;color:var(--m);padding:28px 14px;font-size:13px}footer 
 </header>
 
 <section class="hero">
-  <div><h1>دفء ناعم<br>لكل خطوة صغيرة</h1><p>شباشب مخملية بتصميمات مرحة، تُصنع في مصنعنا وتصلك إلى باب بيتك.</p><button class="cta" onclick="document.getElementById('grid').scrollIntoView({behavior:'smooth'})">تسوّق الآن</button></div>
-  <img src="img/logo.png" alt="شباشب الدب المخملية">
+  <div><h1>دفء ناعم<br>لكل خطوة صغيرة</h1><p>شباشب مخملية بتصميمات مرحة، تُصنع في مصنعنا وتصلك إلى باب بيتك.</p><button class="cta" onclick="document.getElementById('grid').scrollIntoView({behavior:'smooth'})">تسوق الآن</button></div>
+  <img src="img/logo.svg" alt="شباشب الدب المخملية">
 </section>
 <div class="trust">
   <span><svg class="ic"><use href="#i-cash"/></svg>الدفع عند الاستلام</span>
@@ -141,7 +141,7 @@ footer{text-align:center;color:var(--m);padding:28px 14px;font-size:13px}footer 
 const CFG={API:'https://script.google.com/macros/s/AKfycbyJ8nO_Y-KGj_ht5Yh46vqm41DLzkPPl0Exutn4l3vsvOEouL7sCCcPacq9dvJ69ATQ/exec',WA:'201000000000',FREE:600,DEF:65,
  SHIP:{'القاهرة':40,'الجيزة':40,'الإسكندرية':50,'الدقهلية':55,'الشرقية':55,'الغربية':55,'أخرى':65}};
 const $=id=>document.getElementById(id);
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
 const ic=n=>`<svg class="ic"><use href="#i-${n}"/></svg>`;
 const ls={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 let P=[],cat='الكل',cart=ls.get('cart2',{}),fav=ls.get('fav',[]),user=ls.get('user',null),tab='in',sel=null,myO=ls.get('myorders',[]),pend=null;
@@ -156,8 +156,8 @@ async function api(action,d={}){
  catch(e){return{ok:false,error:'تعذّر الاتصال، حاول مرة أخرى'}}}
 function demo(a,d){
  const db=ls.get('demo',{users:[],orders:[]});let out={ok:true};
- if(a==='register'){if(db.users.find(u=>u.phone===d.phone))return{ok:false,error:'الرقم مسجّل من قبل'};db.users.push({name:d.name,phone:d.phone,pass:d.pass});out={ok:true,user:{name:d.name,phone:d.phone,token:'demo'}}}
- if(a==='login'){const u=db.users.find(u=>u.phone===d.phone&&u.pass===d.pass);if(!u)return{ok:false,error:'الرقم أو كلمة السر غير صحيحة'};out={ok:true,user:{name:u.name,phone:u.phone,token:'demo'}}}
+ if(a==='register'){if(db.users.find(u=>u.phone===d.phone))return{ok:false,error:'الرقم مسجّل من قبل'};db.users.push({name:d.name,phone:d.phone,pass:d.pass});out={ok:true,user:{name:d.name,phone:d.phone}}}
+ if(a==='login'){const u=db.users.find(u=>u.phone===d.phone&&u.pass===d.pass);if(!u)return{ok:false,error:'الرقم أو كلمة السر غير صحيحة'};out={ok:true,user:{name:u.name,phone:u.phone}}}
  if(a==='createOrder'){const id='A'+Date.now().toString().slice(-6);db.orders.push({id,...d.order,status:'جديد',date:new Date().toLocaleDateString('ar-EG')});out={ok:true,id}}
  if(a==='requestOtp')return{ok:true,skip:true};
  if(a==='track')out={ok:true,orders:[]};
@@ -180,8 +180,8 @@ function draw(){
  const q=$('q').value.trim();
  const L=P.filter(p=>(cat==='الكل'||p.cat===cat)&&p.name.includes(q));
  $('grid').innerHTML=L.length?L.map(p=>{const off=p.old>p.price?Math.round((1-p.price/p.old)*100):0;
-  return`<article class="card" onclick="openProd(${p.id})"><div class="pic"><img onerror="imgErr(this)" src="${esc(pimg(p))}" alt="${esc(p.name)}" loading="lazy">${off?`<span class="tag">-${off}%</span>`:''}<button class="fav ${fav.includes(p.id)?'on':''}" onclick="event.stopPropagation();tgFav(${p.id})" aria-label="مفضلة">${ic('heart')}</button></div>
-  <div class="info"><div class="nm">${esc(p.name)}</div><div class="dots">${p.colors.map(c=>`<i style="background:${esc(c.hex)}"></i>`).join('')}</div><div class="sub">تم بيع ${p.sold||0}+ · ${stockT(p)>0?'متوفر '+stockT(p)+' قطعة':'نفدت الكمية'}</div><div class="pr"><b>${p.price} ج</b>${p.old>p.price?`<s>${p.old}</s>`:''}</div></div></article>`}).join(''):`<p style="grid-column:1/-1;text-align:center;color:var(--m);padding:30px 0">${P.length?'لا توجد منتجات مطابقة.':'لا توجد منتجات بعد، ستظهر هنا فور نشرها من لوحة التحكم.'}</p>`}
+  return`<article class="card" onclick="openProd(${p.id})"><div class="pic"><img onerror="imgErr(this)" src="${esc(pimg(p))}" alt="${esc(p.name)}" loading="lazy">${off?`<span class="tag">-${off}%</span>`:''}<button class="fav ${fav.includes(p.id)?'on':''}" onclick="event.stopPropagation();tgFav(${p.id})">${ic('heart')}</button></div><div class="info"><div class="nm">${esc(p.name)}</div><div class="dots">${p.colors.map(c=>`<i style="background:${esc(c.hex)}"></i>`).join('')}</div><div class="sub">تم بيع ${p.sold||0}+ · ${stockT(p)} قطعة متاحة</div><div class="pr"><b>${p.price} ج</b>${p.old>p.price?`<s>${p.old} ج</s>`:''}</div></div></article>`}).join(''):'<div style="grid-column:1/-1;padding:25px;color:var(--m);text-align:center">لا توجد منتجات</div>';
+}
 function tgFav(id){fav=fav.includes(id)?fav.filter(x=>x!==id):[...fav,id];ls.set('fav',fav);draw()}
 
 /* ===== صفحة المنتج: لون + مقاس + صور ===== */
@@ -189,12 +189,13 @@ function openProd(id){sel={p:P.find(x=>x.id==id),ci:0,si:-1,q:1,im:0};rProd();sh
 function rProd(){
  const {p,ci,si,q,im}=sel,c=p.colors[ci],imgs=c.images.length?c.images:['img/logo.svg'],stk=si>=0?c.stock[si]:null;
  $('pBd').innerHTML=`<button class="cl x" onclick="closeAll()" aria-label="إغلاق">${ic('x')}</button>
- <div class="gal"><div class="big"><img onerror="imgErr(this)" src="${esc(imgs[im]||imgs[0])}" alt="${esc(p.name)}"></div><div class="th">${imgs.map((u,i)=>`<img onerror="imgErr(this)" src="${esc(u)}" class="${i===im?'on':''}" onclick="sel.im=${i};rProd()" alt="">`).join('')}</div></div>
- <div><div class="sub">${esc(p.cat)}</div><h2 style="font-size:22px;color:var(--p2)">${esc(p.name)}</h2>
+ <div class="gal"><div class="big"><img onerror="imgErr(this)" src="${esc(imgs[im]||imgs[0])}" alt="${esc(p.name)}"></div><div class="th">${imgs.map((u,i)=>`<img onerror="imgErr(this)" src="${esc(u)}" class="${i===im?'on':''}" onclick="sel.im=${i};rProd()">`).join('')}</div></div>
+ <div>
+ <div class="sub">${esc(p.cat)}</div><h2 style="font-size:22px;color:var(--p2)">${esc(p.name)}</h2>
  <div class="pr" style="margin:6px 0"><b style="font-size:24px">${p.price} ج</b>${p.old>p.price?`<s>${p.old} ج</s>`:''}</div><p style="font-size:14px;color:var(--m)">${esc(p.desc||'')}</p>
  <div class="lb">اللون: <b>${esc(c.name)}</b></div><div class="sw">${p.colors.map((x,i)=>`<button class="${i===ci?'on':''}" onclick="sel.ci=${i};sel.im=0;sel.si=-1;rProd()"><i style="background:${esc(x.hex)}"></i>${esc(x.name)}</button>`).join('')}</div>
- <div class="lb">المقاس: <b>${si>=0?esc(p.sizes[si]):'اختر مقاساً'}</b></div><div class="sw sz">${p.sizes.map((s,i)=>`<button class="${i===si?'on':''}" ${c.stock[i]>0?'':'disabled'} onclick="sel.si=${i};sel.q=1;rProd()">${esc(s)}<small>${c.stock[i]>0?c.stock[i]+' متاح':'نفد'}</small></button>`).join('')}</div>
- <div class="avail ${stk!==null&&stk<=5?'lw':''}">${si>=0?`المتاح من هذا المقاس: <b>${stk}</b> قطعة${stk<=5?' (كمية محدودة)':''}`:`المتاح من هذا اللون: <b>${c.stock.reduce((a,b)=>a+(+b||0),0)}</b> قطعة، اختر المقاس`}</div>
+ <div class="lb">المقاس: <b>${si>=0?esc(p.sizes[si]):'اختر مقاساً'}</b></div><div class="sw sz">${p.sizes.map((s,i)=>`<button class="${i===si?'on':''}" ${c.stock[i]>0?'':'disabled'} onclick="sel.si=${i};rProd()">${esc(s)}<small>${c.stock[i]>0?`${c.stock[i]} متاح`:'غير متاح'}</small></button>`).join('')}</div>
+ <div class="avail ${stk!==null&&stk<=5?'lw':''}">${si>=0?`المتاح من هذا المقاس: <b>${stk}</b> قطعة${stk<=5?' (كمية محدودة)':''}`:`المتاح من هذا اللون: <b>${stockT(p)}</b> قطعة`}</div>
  <div class="lb">الكمية</div><div class="q"><button onclick="qty(-1)" aria-label="أقل">${ic('minus')}</button><b>${q}</b><button onclick="qty(1)" aria-label="أكثر">${ic('plus')}</button></div>
  <button class="btn" onclick="addSel()">أضف للسلة · ${p.price*q} ج</button></div>`}
 function qty(n){const m=sel.si>=0?sel.p.colors[sel.ci].stock[sel.si]:99;sel.q=Math.min(m,Math.max(1,sel.q+n));rProd()}
@@ -210,13 +211,13 @@ function openCart(){
  const ks=Object.keys(cart).filter(L2),inf=ls.get('info',{});show('cart');
  if(!ks.length){$('cartBd').innerHTML='<p style="text-align:center;color:var(--m);margin-top:40px">سلتك فارغة</p>';return}
  const s=sub(),left=Math.max(0,CFG.FREE-s);
- $('cartBd').innerHTML=`<div class="note">${ic('truck')}${left?`أضف ${left} ج واحصل على <b>شحن مجاني</b>`:'شحن مجاني على طلبك'}</div><div class="prg"><i style="width:${Math.min(100,s/CFG.FREE*100)}%"></i></div>`+
- ks.map(k=>{const{p,ci,si}=L2(k);return`<div class="row"><img onerror="imgErr(this)" src="${esc(pimg(p,ci))}" alt=""><div class="n">${esc(p.name)}<br><small>${esc(p.colors[ci].name)} · مقاس ${esc(p.sizes[si])}</small><br><b>${p.price*cart[k]} ج</b></div><div class="q"><button onclick="chg('${k}',1)" aria-label="زيادة">${ic('plus')}</button>${cart[k]}<button onclick="chg('${k}',-1)" aria-label="نقصان">${ic('minus')}</button></div></div>`}).join('')+
- `<h3 style="margin:16px 0 8px;font-size:16px">بيانات التوصيل</h3>
- <input id="fn" placeholder="الاسم" value="${esc(user?.name||inf.name||'')}"><input id="fp" type="tel" placeholder="رقم الهاتف (01xxxxxxxxx)" value="${esc(user?.phone||inf.phone||'')}"><input id="fe" type="email" placeholder="البريد الإلكتروني (لاستلام رمز التحقق)" value="${esc(inf.email||'')}">
+ $('cartBd').innerHTML=`<div class="note">${ic('truck')}${left?`أضف ${left} ج واحصل على <b>شحن مجاني</b>`:'شحن مجاني على طلبك'}</div><div class="prg"><i style="width:${Math.min(100,(s/CFG.FREE)*100)}%"></i></div>
+ ${ks.map(k=>{const{p,ci,si}=L2(k);return`<div class="row"><img onerror="imgErr(this)" src="${esc(pimg(p,ci))}" alt=""><div class="n">${esc(p.name)}<br><small>${esc(p.colors[ci].name)} · مقاس ${esc(p.sizes[si])}</small></div><div class="q"><button onclick="chg('${k}',-1)">${ic('minus')}</button><b>${cart[k]}</b><button onclick="chg('${k}',1)">${ic('plus')}</button></div></div>`}).join('')}
+ <h3 style="margin:16px 0 8px;font-size:16px">بيانات التوصيل</h3>
+ <input id="fn" placeholder="الاسم" value="${esc(user?.name||inf.name||'')}"><input id="fp" type="tel" placeholder="رقم الهاتف (01xxxxxxxxx)" value="${esc(user?.phone||inf.phone||'')}" pattern="01[0125]\d{8}"><input id="fe" type="email" placeholder="البريد الإلكتروني" value="${esc(inf.email||'')}">
  <select id="fg" onchange="upTot()">${Object.keys(CFG.SHIP).map(g=>`<option ${g===inf.gov?'selected':''}>${g}</option>`).join('')}</select>
  <textarea id="fa" rows="2" placeholder="العنوان بالتفصيل">${esc(inf.address||'')}</textarea><input id="fm" placeholder="ملاحظات (اختياري)">
- <div class="tot"><span>المجموع</span><span>${s} ج</span></div><div class="tot"><span>الشحن</span><span id="sh"></span></div><div class="tot big"><span>الإجمالي</span><span id="gt"></span></div>
+ <div class="tot"><span>المجموع</span><span>${s} ج</span></div><div class="tot"><span>الشحن</span><span id="sh"></span></div><div class="tot big"><span>الإجمالي</span><span id="gt">${s+ship(inf.gov||Object.keys(CFG.SHIP)[0])} ج</span></div>
  <div class="note">${ic('cash')}الدفع عند الاستلام فقط</div><button class="btn" id="sb" onclick="submitOrder()">تأكيد الطلب</button>`;upTot()}
 function upTot(){const sh=ship($('fg').value);$('sh').textContent=sh?sh+' ج':'مجاني';$('gt').textContent=sub()+sh+' ج'}
 async function submitOrder(){
@@ -230,9 +231,10 @@ async function submitOrder(){
  if(!r.ok){$('sb').disabled=false;$('sb').textContent='تأكيد الطلب';return toast(r.error||'حدث خطأ')}
  pend=o;if(r.skip)return finish(o,'');otpUI(o)}
 function otpUI(o){
- $('cartBd').innerHTML=`<div style="text-align:center;margin-top:20px"><h3>أدخل رمز التحقق</h3><p style="color:var(--m);margin:8px 0 14px">أرسلنا رمزاً من 6 أرقام إلى<br><b>${esc(o.email)}</b><br><small>راجع البريد المزعج إن لم يصل</small></p>
+ $('cartBd').innerHTML=`<div style="text-align:center;margin-top:20px"><h3>أدخل رمز التحقق</h3><p style="color:var(--m);margin:8px 0 14px">أرسلنا رمزاً من 6 أرقام إلى ${esc(o.email)}</p>
  <input id="otp" inputmode="numeric" maxlength="6" placeholder="------" style="text-align:center;font-size:24px;letter-spacing:8px">
- <button class="btn" id="ob" onclick="finish(pend,$('otp').value.trim())">تأكيد الطلب</button><button class="btn alt" onclick="resend()">إعادة إرسال الرمز</button><button class="btn alt" onclick="openCart()">رجوع</button></div>`;$('otp').focus()}
+ <button class="btn" id="ob" onclick="finish(pend,$('otp').value.trim())">تأكيد الطلب</button><button class="btn alt" onclick="resend()">إعادة إرسال الرمز</button><button class="btn alt" onclick="openCart()">إلغاء</button></div>`;
+}
 async function resend(){const r=await api('requestOtp',{phone:pend.phone,email:pend.email});toast(r.ok?'تم إرسال رمز جديد':r.error)}
 function saveOrd(o){myO.unshift(o);ls.set('myorders',myO.slice(0,30))}
 async function finish(o,code){
@@ -242,15 +244,16 @@ async function finish(o,code){
  ls.set('info',{name:o.name,phone:o.phone,gov:o.gov,address:o.address,email:o.email});
  saveOrd({id:r.id,phone:o.phone,date:new Date().toLocaleDateString('ar-EG'),total:o.total,items:o.items,status:'جديد'});
  cart={};ls.set('cart2',cart);cc();pend=null;
- $('cartBd').innerHTML=`<div style="text-align:center;margin-top:30px"><div style="color:var(--ok)"><svg class="ic" style="width:56px;height:56px"><use href="#i-check"/></svg></div><h3>تم استلام طلبك</h3><p>رقم الطلب: <b>${esc(r.id)}</b></p><p style="color:var(--m);margin:8px 0">سنتصل بك للتأكيد قبل التجهيز.</p><button class="btn" onclick="openOrders()">تتبّع حالة الطلب</button>${user?'':'<button class="btn alt" onclick="closeAll();openAcc(\'up\')">أنشئ حساباً</button>'}</div>`}
+ $('cartBd').innerHTML=`<div style="text-align:center;margin-top:30px"><div style="color:var(--ok)"><svg class="ic" style="width:56px;height:56px"><use href="#i-check"/></svg></div><h3>تم استلام طلبك</h3><p style="color:var(--m);margin:8px 0">رقم الطلب: <b>${esc(r.id)}</b></p><p style="color:var(--m)">سيتواصل معك فريق دفيّ لتأكيد التوصيل.</p><button class="btn" onclick="openOrders()">متابعة الطلبات</button></div>`;
+}
 
 /* ===== الحساب ===== */
 function openAcc(t){
- if(user){$('accBd').innerHTML=`<h3>أهلاً ${esc(user.name)}</h3><p style="color:var(--m);margin:6px 0 12px">${esc(user.phone)}</p><button class="btn alt" onclick="openOrders()">طلباتي</button><button class="btn alt" onclick="logout()">تسجيل الخروج</button>`}
+ if(user){$('accBd').innerHTML=`<h3>أهلاً ${esc(user.name)}</h3><p style="color:var(--m);margin:6px 0 12px">${esc(user.phone)}</p><button class="btn alt" onclick="openOrders()">طلباتي</button><button class="btn alt" onclick="logout()">تسجيل خروج</button>`}
  else{tab=t||tab;$('accBd').innerHTML=`<div class="tabs"><button class="${tab==='in'?'on':''}" onclick="openAcc('in')">دخول</button><button class="${tab==='up'?'on':''}" onclick="openAcc('up')">حساب جديد</button></div>
  ${tab==='up'?'<input id="an" placeholder="الاسم">':''}<input id="ap" type="tel" placeholder="رقم الهاتف"><input id="aw" type="password" placeholder="كلمة السر (6 أحرف على الأقل)">
  <button class="btn" onclick="auth()">${tab==='up'?'إنشاء حساب':'دخول'}</button>
- ${tab==='in'?`<p style="text-align:center;margin-top:10px;font-size:13px"><a href="https://wa.me/${CFG.WA}?text=${encodeURIComponent('نسيت كلمة السر')}">نسيت كلمة السر؟</a></p>`:''}
+ ${tab==='in'?`<p style="text-align:center;margin-top:10px;font-size:13px"><a href="https://wa.me/${CFG.WA}?text=${encodeURIComponent('نسيت كلمة السر')}" style="color:var(--p)">نسيت كلمة السر؟</a></p>`:''}
  <p style="text-align:center;font-size:13px;color:var(--m);margin-top:8px">يمكنك الطلب كضيف بدون حساب</p>`}
  show('accMod')}
 async function auth(){
@@ -264,9 +267,10 @@ function logout(){user=null;ls.set('user',null);$('accT').textContent='حساب�
 const STEPS=['جديد','قيد التجهيز','في الطريق','تم التسليم'];
 const tl=s=>s==='ملغي'?'<br><span class="st" style="background:#fde2e2">ملغي</span>':`<div class="tl">${STEPS.map((x,i)=>`<div class="${i<=Math.max(0,STEPS.indexOf(s))?'on':''}"><i></i><small>${x}</small></div>`).join('')}</div>`;
 function drawOrds(){
- $('ordsBd').innerHTML=`<details style="margin-bottom:12px"><summary style="cursor:pointer;color:var(--p)">تتبّع طلب برقمه</summary><input id="tid" placeholder="رقم الطلب" style="margin-top:8px"><input id="tph" type="tel" placeholder="رقم الهاتف"><button class="btn alt" onclick="trackOne()">بحث</button></details>`+
- (myO.length?myO.map(o=>`<div class="ord"><b>#${esc(o.id)}</b> · ${esc(o.date||'')} · ${o.total} ج${tl(o.status)}<small>${(o.items||[]).map(i=>esc(i.name)+' '+esc(i.color||'')+' '+esc(i.size||'')+' ×'+i.qty).join('، ')}</small></div>`).join(''):'<p style="text-align:center;color:var(--m);margin-top:30px">لا توجد طلبات على هذا الجهاز بعد.</p>')}
-function mergeO(L,ph){L.forEach(o=>{const i=myO.findIndex(x=>x.id===o.id),n={phone:ph,...(i>-1?myO[i]:{}),...o};i>-1?myO[i]=n:myO.push(n)});myO.sort((a,b)=>b.id.localeCompare(a.id));ls.set('myorders',myO.slice(0,30))}
+ $('ordsBd').innerHTML=`<details style="margin-bottom:12px"><summary style="cursor:pointer;color:var(--p)">تتبّع طلب برقمه</summary><input id="tid" placeholder="رقم الطلب" style="margin-top:10px"><input id="tph" placeholder="رقم الهاتف" style="margin-top:8px"><button class="btn" onclick="trackOne()">تتبّع</button></details>
+ ${(myO.length?myO.map(o=>`<div class="ord"><b>#${esc(o.id)}</b> · ${esc(o.date||'')} · ${o.total} ج${tl(o.status)}<small>${(o.items||[]).map(i=>esc(i.name)+' '+esc(i.color||'')+' '+esc(i.size||'')+' × '+i.qty).join(' · ')}</small></div>`).join(''):'<p style="color:var(--m);text-align:center;margin-top:20px">لا توجد طلبات</p>')}`;
+}
+function mergeO(L,ph){L.forEach(o=>{const i=myO.findIndex(x=>x.id===o.id),n={phone:ph,...(i>-1?myO[i]:{}),...o};i>-1?myO[i]=n:myO.push(n)});myO.sort((a,b)=>b.id.localeCompare(a.id));ls.set('myorders',myO.slice(0,30));}
 async function openOrders(){
  closeAll();show('ords');drawOrds();
  const phone=user?.phone||myO[0]?.phone;if(!phone)return;
@@ -281,23 +285,24 @@ async function trackOne(){
 let bs={step:null,o:{}};
 const FAQ=[[/شحن|توصيل/,`الشحن من ${Math.min(...Object.values(CFG.SHIP))} ج حسب المحافظة، ومجاني فوق ${CFG.FREE} ج. التوصيل خلال 2–5 أيام.`],
  [/دفع|فيزا|كارت/,'الدفع عند الاستلام فقط، لا يوجد دفع أونلاين.'],
- [/استرجاع|استبدال|ارجاع|مقاس/,'يمكنك الاستبدال خلال 3 أيام من الاستلام إذا كان المنتج بحالته، ومقاسات الأطفال من 26 إلى 33.']];
+ [/استرجاع|استبدال|ارجاع|مقاس/,'يمكنك الاستبدال خلال 3 أيام من الاستلام إذا كان المنتج بحالته، ومقاسات الأطفال متوفرة في المقاسات المحددة.'],
+ [/مساعدة|مرحبا|السلام|hi|hello/,'أهلاً بك! أستطيع مساعدتك في الطلب والشحن والدفع.']];
 function say(t,u){const d=document.createElement('div');d.className='m '+(u?'u':'b');d.textContent=t;$('msgs').appendChild(d);$('msgs').scrollTop=1e9}
 function qr(a){$('qr').innerHTML=a.map(x=>`<button onclick="botIn(this.textContent)">${esc(x)}</button>`).join('')}
-function toggleChat(){const c=$('chat');c.classList.toggle('on');if(c.classList.contains('on')&&!$('msgs').children.length){say(`أهلاً ${user?user.name.split(' ')[0]:'بك'} في دفيّ\nكيف أساعدك؟`);qr(['أريد أطلب','الشحن','الدفع','المقاسات','واتساب'])}}
+function toggleChat(){const c=$('chat');c.classList.toggle('on');if(c.classList.contains('on')&&!$('msgs').children.length){say(`أهلاً ${user?user.name.split(' ')[0]:'بك'} في دفيّ\nكيف يمكنني مساعدتك؟`,false);qr(['أريد أطلب','الشحن','واتساب'])}}
 function botSend(e){e.preventDefault();const v=$('bin').value.trim();if(v){$('bin').value='';botIn(v)}}
 async function botIn(t){
  say(t,true);const o=bs.o,S=bs.step;
  if(t==='واتساب')return say('https://wa.me/'+CFG.WA);
- if(S==='prod'){const p=P.find(x=>x.name===t);if(!p){say('اختر منتجاً من القائمة.');return qr(P.map(x=>x.name))}o.p=p;bs.step='col';say('اختر اللون:');return qr(p.colors.map(c=>c.name))}
- if(S==='col'){const i=o.p.colors.findIndex(c=>c.name===t);if(i<0)return say('اختر لوناً من القائمة.');o.ci=i;bs.step='size';say('اختر المقاس (الكمية المتاحة):\n'+o.p.sizes.map((s,j)=>o.p.colors[i].stock[j]>0?s+' : '+o.p.colors[i].stock[j]+' قطعة':'').filter(Boolean).join('\n'));return qr(o.p.sizes.filter((s,j)=>o.p.colors[i].stock[j]>0))}
- if(S==='size'){const j=o.p.sizes.indexOf(t);if(j<0||!(o.p.colors[o.ci].stock[j]>0))return say('اختر مقاساً متاحاً.');o.si=j;bs.step='qty';say('كم زوجاً؟');return qr(['1','2','3'])}
- if(S==='qty'){const n=parseInt(t);if(!(n>0&&n<=o.p.colors[o.ci].stock[o.si]))return say('الكمية غير متاحة، اكتب رقماً أقل.');o.q=n;bs.step='name';qr([]);return say(user?'الاسم: '+user.name+'؟ اكتب نعم أو اسماً آخر':'ما اسمك؟')}
+ if(S==='prod'){const p=P.find(x=>x.name===t);if(!p){say('اختر منتجاً من القائمة.');return qr(P.map(x=>x.name))}o.p=p;bs.step='col';say('اختر اللون:');return qr(p.colors.map(x=>x.name))}
+ if(S==='col'){const i=o.p.colors.findIndex(c=>c.name===t);if(i<0)return say('اختر لوناً من القائمة.');o.ci=i;bs.step='size';say('اختر المقاس (الكمية المتاحة):');return qr(o.p.sizes.map((s,j)=>`${s} (${o.p.colors[i].stock[j]})`))}
+ if(S==='size'){const j=o.p.sizes.indexOf(t.split(' ')[0]);if(j<0||!(o.p.colors[o.ci].stock[j]>0))return say('اختر مقاساً متاحاً.');o.si=j;bs.step='qty';say('كم زوجاً؟');return qr(['1','2','3'])}
+ if(S==='qty'){const n=parseInt(t);if(!(n>0&&n<=o.p.colors[o.ci].stock[o.si]))return say('الكمية غير متاحة، اكتب رقماً أقل.');o.q=n;bs.step='name';qr([]);return say(user?'اكتب اسمك أو اكتب نعم للاسم الحالي':'اكتب اسمك')}
  if(S==='name'){o.name=(t==='نعم'&&user)?user.name:t;bs.step='phone';return say('رقم هاتفك؟')}
  if(S==='phone'){if(!/^01[0125]\d{8}$/.test(t))return say('رقم غير صحيح، مثال: 01012345678');o.phone=t;bs.step='gov';qr(Object.keys(CFG.SHIP));return say('المحافظة؟')}
  if(S==='gov'){o.gov=CFG.SHIP[t]!==undefined?t:'أخرى';bs.step='addr';qr([]);return say('العنوان بالتفصيل؟')}
  if(S==='addr'){o.address=t;bs.step='email';return say('بريدك الإلكتروني لإرسال رمز التحقق؟')}
- if(S==='email'){if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(t))return say('بريد غير صحيح، مثال: name@gmail.com');o.email=t;bs.step='ok';const s=o.p.price*o.q,sh=s>=CFG.FREE?0:(CFG.SHIP[o.gov]??CFG.DEF);Object.assign(o,{s,sh,total:s+sh});qr(['تأكيد','إلغاء']);return say(`ملخص طلبك:\n${o.q} × ${o.p.name} (${o.p.colors[o.ci].name} - ${o.p.sizes[o.si]})\nالشحن: ${sh} ج\nالإجمالي: ${o.total} ج دفع عند الاستلام\nهل تؤكد؟`)}
+ if(S==='email'){if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(t))return say('بريد غير صحيح، مثال: name@gmail.com');o.email=t;bs.step='ok';const s=o.p.price*o.q,sh=s>=CFG.FREE?0:(CFG.SHIP[o.gov]??CFG.DEF);o.total=s+sh;return say(`إجمالي الطلب: ${o.total} ج\nتأكيد الطلب؟`,false);qr(['تأكيد','إلغاء'])}
  if(S==='ok'){qr([]);if(t!=='تأكيد'){bs={step:null,o:{}};return say('تم الإلغاء.')}
   const r=await api('requestOtp',{phone:o.phone,email:o.email});if(!r.ok)return say(r.error||'تعذّر إرسال الرمز');
   if(r.skip)return botFinish('');bs.step='otp';return say('أرسلنا رمزاً من 6 أرقام إلى '+o.email+'\nاكتبه هنا لتأكيد الطلب:')}
@@ -308,7 +313,7 @@ async function botIn(t){
  say('لم أفهم تماماً. اكتب "أريد أطلب" أو اسأل عن الشحن والدفع والمقاسات.');qr(['أريد أطلب','الشحن','واتساب'])}
 
 async function botFinish(code){
- const o=bs.o,r=await api('createOrder',{otp:code,order:{name:o.name,phone:o.phone,email:o.email,gov:o.gov,address:o.address,items:[{id:o.p.id,name:o.p.name,price:o.p.price,qty:o.q,ci:o.ci,color:o.p.colors[o.ci].name,size:o.p.sizes[o.si]}],subtotal:o.s,shipping:o.sh,total:o.total,source:'bot'}});
+ const o=bs.o,r=await api('createOrder',{otp:code,order:{name:o.name,phone:o.phone,email:o.email,gov:o.gov,address:o.address,items:[{id:o.p.id,name:o.p.name,price:o.p.price,qty:o.q,ci:o.ci,color:o.p.colors[o.ci].name,size:o.p.sizes[o.si]}],subtotal:o.total,shipping:CFG.SHIP[o.gov]??CFG.DEF,total:o.total}});
  if(!r.ok){return say((r.error||'تعذّر تسجيل الطلب')+(/رمز/.test(r.error||'')?'\nأعد كتابة الرمز أو اكتب "إلغاء".':''))}
  saveOrd({id:r.id,phone:o.phone,date:new Date().toLocaleDateString('ar-EG'),total:o.total,items:[{name:o.p.name,color:o.p.colors[o.ci].name,size:o.p.sizes[o.si],qty:o.q}],status:'جديد'});
  bs={step:null,o:{}};say(`تم تسجيل طلبك رقم ${r.id}. تتابع حالته من "تتبّع طلبي" أسفل الصفحة.`)}
@@ -316,7 +321,7 @@ async function botFinish(code){
 function show(id){$('ov').classList.toggle('on',id==='cart'||id==='ords');$(id).classList.add('on')}
 function closeAll(){['ov','cart','ords','accMod','pMod'].forEach(i=>$(i).classList.remove('on'))}
 function toast(m){const t=$('toast');t.textContent=m;t.style.display='block';clearTimeout(t._);t._=setTimeout(()=>t.style.display='none',2200)}
-(function tick(){const e=new Date();e.setHours(23,59,59,0);const d=e-new Date();$('cd').textContent=[Math.floor(d/36e5),Math.floor(d%36e5/6e4),Math.floor(d%6e4/1e3)].map(x=>String(x).padStart(2,'0')).join(':');setTimeout(tick,1000)})();
+(function tick(){const e=new Date();e.setHours(23,59,59,0);const d=e-new Date();$('cd').textContent=[Math.floor(d/36e5),Math.floor(d%36e5/6e4),Math.floor(d%6e4/1e3)].map(x=>String(x).padStart(2,'0')).join(':');})();
 if(user)$('accT').textContent=user.name.split(' ')[0];
 cc();load();
 if('serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
